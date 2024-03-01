@@ -4,13 +4,13 @@ services:
         environment:
             # OPENAI/AZURE/OPENROUTER
             - ENDPOINT=OPENAI
-            - OPENAI_API_KEY=
+            - OPENAI_API_KEY=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
             # - AZURE_API_KEY=
             # - AZURE_ENDPOINT=
             # - OPENROUTER_API_KEY=
             # In case of Azure endpoint, change this to your deployed model name
-            - MODEL_NAME=gpt-4
-            - MAX_TOKENS=8192
+            - MODEL_NAME=gpt-4-0125-preview	
+            - MAX_TOKENS=128000
             - DATABASE_TYPE=postgres
             - DB_NAME=pilot
             - DB_HOST=postgres
